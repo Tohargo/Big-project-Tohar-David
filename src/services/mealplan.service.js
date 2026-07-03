@@ -16,7 +16,7 @@ export const generateMealPlan = async () => {
 };
 
 
-export const getMealPlanByTags = async (cuisine, diet, meal, intolerances, targetCalories) => {
+export const getMealPlanByTags = async ( diet, intolerances, targetCalories) => {
     const { baseUrl, apiKey } = config.spoonacular;
     const tags = tagMangerForMealPlan(targetCalories, diet, intolerances);
     const url = `${baseUrl}/mealplanner/generate?timeFrame=week${tags}&apiKey=${apiKey}`;
