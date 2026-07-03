@@ -2,14 +2,14 @@
 
 # Recipe & Meal Plan API
 
- node project browsing recipes and generating meal plans using the Spoonacular API.
+ Node project browsing recipes and generating meal plans using Spoonacular API.
 
 ## About
 
 This project provides endpoints to:
-- Find search tags
+- Find search tags from our server
 - Search recipes via Spoonacular API
-- Generate meal plans based on preferences
+- Generate meal plans based on preferences or randomize it
 
 ## Sample URLs
 
