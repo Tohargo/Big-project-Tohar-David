@@ -1,4 +1,6 @@
-# 🍽️ Recipe & Meal Plan API
+# Tohar Gosalker - 330937673 & David Netanel Bram - 217335835
+
+# Recipe & Meal Plan API
 
  node project browsing recipes and generating meal plans using the Spoonacular API.
 
