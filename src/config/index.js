@@ -1,10 +1,9 @@
-export default {
+const config = {
+    port: process.env.PORT || 2023,
     spoonacular: {
         baseUrl: 'https://api.spoonacular.com',
         apiKey: process.env.SPOONACULAR_KEY
-    },
-    theMealDB: {
-        baseUrl: 'https://www.themealdb.com/api/json/v1/',
-        apiKey: process.env.THEMEALDB_KEY
     }
 };
+
+export default config;

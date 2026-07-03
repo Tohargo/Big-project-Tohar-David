@@ -1,9 +1,12 @@
 import { Router } from "express";
-import { getRecipes, getRecipeComplex } from "../controllers/recipes.controller.js";
+import { getTags, getTagsByCategory, getRecipeByTagSearch } from "../controllers/recipes.controller.js";
 
 const router = Router();
 
-router.get("/", getRecipes);
-router.get("/search", getRecipeComplex);
+router.get("/tags", getTags);
 
-export default router;
+router.get("/tags/category/:category", getTagsByCategory);
+
+router.get("/search/", getRecipeByTagSearch);
+
+export { router as recipesRouter };

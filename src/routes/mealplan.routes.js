@@ -1,8 +1,10 @@
-import {Router} from 'express';
-import {getMealPlan} from '../controllers/mealplan.controller.js';
+import { Router } from 'express';
+import { getMealPlan, getMealPlanWithTags } from '../controllers/mealplan.controller.js';
 
 const router = Router();
 
-router.get("/", getMealPlan);
+router.get("/random", getMealPlan);
 
-export default router;
+router.get("/:tags", getMealPlanWithTags);
+
+export { router as mealplanRouter };
